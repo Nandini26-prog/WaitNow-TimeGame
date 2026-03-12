@@ -2,8 +2,8 @@
 
 A minimalist 2D precision timing game developed in Unity. This project was built iteratively around the theme of "Time", focusing on core mechanics, game feel, and dynamic difficulty scaling.
 
- **[Play the WebGL build on itch.io here](YOUR_ITCH_IO_LINK_HERE)**
- **View the iterative development process on Miro here: https://miro.com/app/board/uXjVG08_35Y=/?share_link_id=708873105142**
+ **[Play the WebGL build on itch.io here](https://nansquare.itch.io/waitnow))**
+ **[View the iterative development process on Miro here]( https://miro.com/app/board/uXjVG08_35Y=/?share_link_id=708873105142)**
 
 ## Core Concept
 The game represents a broken clock mechanism. A metronome bar swings rapidly across the screen, and the player must press `SPACE` at the exact millisecond it crosses the target zone to sync the time. 
