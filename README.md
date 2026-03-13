@@ -14,6 +14,8 @@ The game represents a broken clock mechanism. A metronome bar swings rapidly acr
 
 ## Mechanics & Level Progression
 The game uses a dynamic threshold system. Accumulating 3 progress points (Perfect = 2pts, Nice = 1pt) triggers a Level Up, which alters the game state:
+* **Speed Scaling:** With every successful hit (Nice or Perfect), the metronome bar's movement speed increases exponentially by a 1.05x multiplier, naturally escalating the time pressure.
+* **Miss (Game Over):** Pressing `SPACE` when the bar is entirely outside the target zone shatters the clock, resulting in an instant Game Over.
 * **Nice Hit (+1 Score):** Bar lands within the target zone.
 * **Perfect Hit (+5 Score):** Bar lands within the exact dead-center 20% of the zone.
 * **Level 1:** Static center target.
@@ -24,6 +26,6 @@ The game uses a dynamic threshold system. Accumulating 3 progress points (Perfec
 ## Technical Implementation
 * **Engine:** Unity (2D Core Built-in Render Pipeline)
 * **Platform:** WebGL
-* **Highlights:** Frame-independent movement (`Time.deltaTime`), custom UI animations via Coroutines, dynamic screen bounds calculation, and `Vector3.SmoothDamp` for trailing visual effects.
+* **Highlights:** Frame-independent movement (`Time.deltaTime`), dynamic screen bounds calculation, custom UI animations via Coroutines, `Vector3.SmoothDamp` for trailing visual effects, audio-synced feedback, and math-driven screen shake for impactful failure states
 
 *Note: The Unity `Library` folder has been intentionally excluded via `.gitignore` to keep the repository clean.*
